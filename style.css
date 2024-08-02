@@ -1,0 +1,760 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.logo h2,
+.logo a,
+.items a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo strong {
+  color: rgb(125, 75, 11);
+}
+
+.logo {
+  font-weight: 600;
+}
+
+.fa-solid fa-mug-hot {
+  margin-left: 5px;
+}
+
+
+.items a {
+  color: white;
+}
+
+.items a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.items a:hover {
+  border-bottom: 2px solid rgb(125, 75, 11);
+}
+
+.Home {
+  margin: 10px 20px;
+  padding: 50px;
+  background: url(https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  width: 100%;
+  height: 100vh;
+}
+
+.home-content {
+  padding-top: 120px;
+  margin: 20px;
+  max-width: 700px;
+}
+
+.home-btn {
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.home-btn button {
+  padding: 10px;
+  background-color: rgb(125, 75, 11);
+  border: none;
+  border-radius: 5px;
+}
+
+.home-content h1 {
+  margin-bottom: 10px;
+  color: bisque;
+}
+
+.home-content h3 {
+  color: chocolate;
+  font-family: "Dancing Script", cursive;
+}
+
+.home-content p {
+  padding-top: 10px;
+}
+
+.home-btn button:hover {
+  background-color: darkorange;
+}
+
+/* Menu Functions */
+
+.Menu-Fns {
+  display: none;
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  z-index: 1000;
+}
+
+#menu-close,
+#menu-open {
+  cursor: pointer;
+  font-size: 24px;
+}
+/* Menus */
+.shop-menu {
+  margin-top: 30px;
+  background: url(https://images.pexels.com/photos/3158814/pexels-photo-3158814.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px;
+}
+
+.shop-menu h1 {
+  color: bisque;
+  text-align: center;
+}
+
+.menu-lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.menu-item {
+  max-width: 400px;
+  height: 500px;
+  border: 1px solid burlywood;
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.menu-item h3 {
+  color: rgb(125, 75, 11);
+  padding: 20px;
+}
+
+.menu-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: burlywood;
+}
+
+/* Ads page */
+.page {
+  background-color: #e8e2db;
+  padding: 40px;
+  margin: 20px;
+}
+
+.page-banner {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+
+  margin: 20px 20px;
+  padding: 20px;
+}
+
+.page-banner h2 {
+  color: brown;
+  margin-top: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.page-banner p {
+  margin: 20px;
+  padding: 50px;
+  color: black;
+  max-width: 500px;
+  position: absolute;
+}
+
+.ad-images {
+  position: relative;
+  flex: 1;
+  margin: 40px;
+}
+
+.ad-images img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.ad-images .img1 {
+  height: 200px;
+}
+
+.ad-images .img2 {
+  height: 200px;
+  object-fit: cover;
+}
+.ad-images .img3 {
+  height: 200px;
+}
+
+.ad-images .img4 {
+  margin-bottom: 30px;
+  margin-left: 50px;
+  animation: float 1s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Return to start position */
+  }
+}
+
+/* ---------Story ----- */
+.story {
+  background: url(https://images.pexels.com/photos/585750/pexels-photo-585750.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 20px;
+  padding: 20px;
+}
+
+.story-list {
+  display: flex;
+}
+
+.story-item {
+  padding: 20px;
+  border: 1px solid wheat;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.story-item:hover {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("new-image.jpg");
+  background-size: cover;
+}
+
+/* About us */
+
+.aboutUs {
+  padding: 40px;
+}
+.aboutUs h2 {
+  color: chocolate;
+  text-align: center;
+}
+
+.about {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-list {
+  padding: 30px;
+  margin: 20px 20px;
+  text-align: center;
+
+  border-radius: 8px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.about-list a {
+  color: white;
+  margin-right: 10px;
+}
+
+.moreInfo {
+  text-align: center;
+
+  border-radius: 8px;
+  max-width: 300px;
+  margin: 20px 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+.moreInfo ul {
+  list-style: none;
+}
+
+.moreInfo li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 0;
+}
+
+.moreInfo h3,
+.about-list h3 {
+  color: chocolate;
+  margin-bottom: 20px;
+}
+
+/* -------------------Media Queries----------------- */
+
+.Navigation .fas{
+  display:none;
+}
+
+/* Mobile Devices (Portrait and Landscape) */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .topbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .items a {
+    display: none; /* Hide navigation links */
+  }
+
+  .Menu-Fns {
+    display: block; /* Show menu icon */
+  }
+
+  .logo h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .Home {
+    padding: 30px;
+    height: auto;
+    width: 90%;
+    font-size: 14px;
+    background: url(https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=600)
+      no-repeat center center; /* Optional background image */
+    background-size: cover;
+  }
+
+  .home-content {
+    padding-top: 60px;
+    margin: 10px;
+  }
+
+  .home-btn button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .shop-menu {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .shop-menu h1 {
+    font-size: 20px;
+  }
+
+  .menu-item {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  .page {
+    padding: 20px;
+    width: 100%;
+  }
+
+  /* Adjust the .page-banner */
+  .page-banner {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin: 10px 0; /* Adjust margins */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .page-banner h2 {
+    font-size: 1em; /* Reduce font size for smaller screens */
+    margin-top: 10px; /* Adjust top margin */
+  }
+
+  .page-banner p {
+    font-size: 14px;
+    margin: 10px 0; /* Adjust margins */
+    padding: 10px; /* Reduce padding */
+    max-width: 100%; /* Allow paragraph to use full width */
+    position: relative; /* Adjust position to relative */
+  }
+
+  /* Adjust .ad-images */
+  .ad-images {
+    margin: 20px 0; /* Adjust margin */
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images */
+    gap: 10px; /* Add spacing between images */
+  }
+
+  .ad-images img {
+    height: auto; /* Allow height to adjust based on aspect ratio */
+    width: calc(40% - 10px); /* Make images responsive, two per row */
+    border-radius: 4px; /* Adjust border radius */
+    object-fit: cover; /* Ensure images cover their containers */
+  }
+
+  .ad-images .img4 {
+    margin: 0; /* Remove margin */
+    animation: none; /* Remove animation on smaller screens */
+  }
+
+  .story {
+    font-size: 14px;
+    padding: 20px;
+    width: 100%;
+    margin: 10px 10px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .story-list {
+    flex-direction: column; /* Stacks items vertically */
+  }
+  .story-item {
+    flex: 1 1 100%;
+    margin: 5px 0;
+
+    .about {
+      flex-direction: column;
+      margin: 10px;
+      padding: 10px;
+    }
+  }
+  
+.Navigation .fas{
+    display: block;
+    font-size: 25px;
+}
+.Navigation .items {
+  background-color: rgb(171, 127, 70);
+  position: fixed;
+  top: 0;
+  right:-200px;
+  width:200px;
+  height:30vh;
+  padding-top:50px;
+  z-index:2;
+  transition: right 0.5s;
+}
+
+.Navigation .items a {
+  display: block;
+  color:burlywood;
+  text-decoration:none;
+  margin: 25px;
+}
+.Navigation .fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 3; /* Ensure it stays on top */
+}
+.Navigation .fa-times {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+  
+
+
+}
+
+/* Tablets (Portrait and Landscape) */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .items a {
+    display: none; /* Hide navigation links */
+  }
+
+  .Menu-Fns {
+    display: block; /* Show menu icon */
+  }
+
+  .logo h2 {
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .Home {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh; 
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background: url(https://images.pexels.com/photos/585753/pexels-photo-585753.jpeg?auto=compress&cs=tinysrgb&w=600)
+      no-repeat center center; /* Optional background image */
+    background-size: cover; /* Cover the entire section */
+    margin: 0;
+  }
+
+  /* Adjust home-content styles */
+  .home-content {
+    text-align: center;
+    max-width: 100%; /* Ensure content uses full width */
+  }
+
+  /* Adjust home-btn styles */
+  .home-btn {
+    margin: 10px 0; 
+    padding: 50px 200px; 
+    text-align: center; 
+  }
+
+  .home-btn button {
+    width: 100%; /* Make buttons full-width */
+    padding: 15px; /* Increase padding for better touch targets */
+    font-size: 16px; 
+    margin-bottom: 10px; 
+  }
+
+  /* Adjust h1 styles */
+  .home-content h1 {
+    font-size: 1.5em; 
+    margin-bottom: 5px; 
+  }
+
+  /* Adjust h3 styles */
+  .home-content h3 {
+    font-size: 1.2em; 
+  }
+
+  /* Adjust p styles */
+  .home-content p {
+    font-size: 0.9em; 
+    line-height: 1.4; /* to improve readability with line height */
+  }
+
+  .shop-menu {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .menu-item {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .page {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .page-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .page-banner h2 {
+    font-size: 1.2em; 
+    margin-top: 10px; 
+  }
+  .page-banner p {
+    margin: 10px 0; 
+    padding: 10px;
+    max-width: 100%; /* Allow paragraph to use full width */
+    position: relative; 
+  }
+  .ad-images {
+    margin: 20px 0; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 10px; /* Add spacing between images */
+  }
+
+  .ad-images img {
+    height: auto; 
+    width: calc(50% - 10px); /* Make images responsive, two per row */
+    border-radius: 4px; 
+    object-fit: cover; /* Ensure images cover their containers */
+  }
+
+  .ad-images .img4 {
+    height: 200px;
+    margin: 0; 
+    animation: none; /* Remove animation on smaller screens */
+  }
+
+  .story {
+    padding: 30px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .story-list {
+    flex-direction: column;
+  }
+  .story-item {
+    flex: 1 1 100%;
+    margin: 5px 0;
+
+    
+  }
+
+  .about {
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .Navigation .fas{
+    display: block;
+    font-size: 25px;
+}
+.Navigation .items {
+  background-color: rgb(171, 127, 70);
+  position: fixed;
+  top: 0;
+  right:-200px;
+  width:200px;
+  height:30vh;
+  padding-top:50px;
+  z-index:2;
+  transition: right 0.5s;
+}
+
+.Navigation .items a {
+  display: block;
+  color:burlywood;
+  text-decoration:none;
+  margin: 25px;
+}
+.Navigation .fa-bars {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 3; /* Ensure it stays on top */
+}
+.Navigation .fa-times {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
+  
+}
+
+
+  /* Media query for screens between 768px and 1455px */
+  @media screen and (min-width: 768px) and (max-width: 1455px) {
+    .page {
+      padding: 30px;
+      margin: 15px;
+    }
+
+    .page-banner {
+      display: flex;
+      align-items: flex-start;
+      position: relative;
+      flex-direction: column;
+      margin: 20px;
+      padding: 15px;
+    }
+
+    .page-banner h2 {
+      font-size: 24px; /* Adjust font size if needed */
+      color: brown;
+      margin-top: 10px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .page-banner p {
+      margin: 10px;
+      padding: 30px;
+      color: black;
+      max-width: 600px;
+      position: relative; /* Changed to relative */
+      font-size: 16px; 
+    }
+
+    .ad-images {
+      display: flex; /* Use flexbox for better alignment */
+      flex-wrap: wrap; /* Allow images to wrap onto multiple lines if needed */
+      justify-content: space-between; 
+
+      position: relative;
+    }
+
+    .ad-images img {
+      display: flex;
+      flex: 1;
+
+      margin: 5px;
+      border-radius: 8px;
+      object-fit: cover;
+
+      margin-bottom: 20px;
+    }
+
+    .ad-images .img1,
+    .ad-images .img2,
+    .ad-images .img3,
+    .ad-images .img4 {
+      height: 250px;
+
+     
+    }
+
+    .ad-images .img4 {
+      position: relative;
+      right: 0;
+      top: 30%;
+
+      width: 200px; 
+      height: auto; 
+    }
+
+    
+  }
+
